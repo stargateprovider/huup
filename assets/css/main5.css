@@ -2997,6 +2997,55 @@
 
 	}
 
+
+/* LISA, nav-bar */
+/*prop: top right bottom left;*/
+
+#main > .navSection {
+	margin: 0 auto;
+	width: 80rem;
+	max-width: 90%;
+	margin-bottom: 2rem;
+	background: transparent;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 4px;
+}
+/*#zero {
+	background: transparent;
+}*/
+
+#nav {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: -7px;
+
+	border-style: solid;
+	border-color: black;
+	border-width: 6px;
+	background: black;
+	font-size: 20px;
+}
+#nav a {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	float: left;
+	text-align: center;
+	margin: 0;
+	width: 25%;
+
+	/*border-style: solid;
+	border-width: 1px;
+	/*box-shadow: 0px 0px 1px 1px black inset;*/
+	/*background: transparent;*/
+	color: white;
+	text-decoration: none;
+}
+
+
 /* Main */
 
 	#main > .inner {
