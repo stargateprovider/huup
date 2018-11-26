@@ -10,13 +10,38 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main5.css" />
+		<script type="text/javascript">
+			function fun0(x = -1) {
+				var images = ['.png','2.png','2a.png','2b.png','2c.png','3.png','4.png','5.png','Ha.png','Hb.png','Hc.png'];
+
+				if (x === -1) {
+					var i = Math.floor(Math.random() * images.length);
+				}
+				else {
+					var i = x;
+				}
+				document.getElementById('weblogo').src =  'images5/veebilogo' + images[i];
+			}
+		</script>
 	</head>
 	<body>
-		<a href="indexOLD.html" style="background: red; color: black; font-size: 32px;">ALGUSESSE</a>
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="#">HÜÜP<span></span></a></div>
+				<div class="logo"><a href="index.html">HÜÜP<span></span></a></div>
+				<h2>~Vakstu~taustad</h2>
+				<input type="button" style="color:red!important;" value="Pilt 1" onclick="fun0(0);"/>
+				<input type="button" style="color:orange!important;" value="Pilt 2" onclick="fun0(1);"/>
+				<input type="button" style="color:green!important;" value="Pilt 2a" onclick="fun0(2);"/>
+				<input type="button" style="color:orange!important;" value="Pilt 2b" onclick="fun0(3);"/>
+				<input type="button" style="color:green!important;" value="Pilt 2c" onclick="fun0(4);"/>
+				<input type="button" style="color:orange!important;" value="Pilt 3" onclick="fun0(5);"/>
+				<input type="button" style="color:red!important;" value="Pilt 4" onclick="fun0(6);"/>
+				<input type="button" style="color:red!important;" value="Pilt 5" onclick="fun0(7);"/>
+				<br/><p style="margin-bottom:0px!important;color:black!important;"><b>No ja siis ma sain aru, et ükski pole Helvetica fondis tegelikult, nii et alumised näited on Helvetica fondiga:</b></p><br/>
+				<input type="button" style="color:black!important;margin-bottom:5px!important" value="Pilt H" onclick="fun0(8);"/>
+				<input type="button" style="color:black!important;margin-bottom:5px!important" value="Pilt Ha" onclick="fun0(9);"/>
+				<input type="button" style="color:black!important;margin-bottom:5px!important" value="Pilt Hb" onclick="fun0(10);"/>
 			</header>
 
 		<!-- Main -->
@@ -28,7 +53,7 @@
 					<section id="zero" class="wrapper style1">
 
 						<div class="image fit flush">
-							<img src="images5/pic02.jpg" alt="" />
+							<img id="weblogo" src="veebilogo2c.png" alt="" />
 						</div>
 						<nav id="nav">
 							<a href="index.html">Hüüp/kodu</a>
@@ -96,14 +121,12 @@
 			<footer id="footer">
 				<div class="container">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<!--li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li-->
+						<li><a href="https://real.edu.ee/"><img src="https://real.edu.ee/wp-content/uploads/2017/11/logo-footer.svg"></a></li>
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; Untitled. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+					&copy; HÜÜP. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
 				</div>
 			</footer>
 
